@@ -34,3 +34,14 @@ Use `templates/committee_decision_template.md`:
 ## Re-review mode
 
 Use the traceability variant in the template: per prior-roadmap item — Claimed (what the writer says changed) / Verified (what the new draft shows, independently checked) / status (Addressed / Partial / Not addressed / Regressed). Then a fresh-eyes pass for revision-introduced regressions, then a new Needle Verdict with delta and rationale.
+
+## File mode (whole-app)
+
+Same synthesis protocol (matrix → consensus/splits → caps → verdict → roadmap), output via `templates/file_review_template.md` instead. Differences:
+
+1. **Section ratings table** replaces the single-essay framing: Academic · Testing · Activities · Honors · Essays · File Coherence, each 1–6, each traceable to the lane report that produced it (Essays = First Reader's one-liner reads; File Coherence = DA's "one person" finding + Institutional's coherence read, arbitrated by you if they split). UC files: Testing row reads "not considered (test-blind)" — no rating.
+2. **File Disposition band** replaces the Needle Verdict: UNLIKELY / REACH-PLAUSIBLE / COMPETITIVE / COMPELLING for the Context Card tier, followed **immediately** by the verbatim uncertainty caveat (SKILL.md Checkpoint 8). Never a percentage, never "chances."
+3. **Band-cap arithmetic** (Checkpoint 8, same mechanics as the DA cap): any unresolved CRITICAL cross-document inconsistency from the DA's file-mode report → band ≤ REACH-PLAUSIBLE, stated with the finding cited. Academic Reader's BLOCK verdict → band ≤ REACH-PLAUSIBLE likewise (an office rarely argues past a blocked academic case; say so plainly).
+4. **Cross-section Revision Roadmap**: prioritized by disposition impact — fixable file problems (inconsistencies, slot craft, coverage gaps, submit/withhold calls) rank above essay polish; each item names its section, its lane report, and a completion test.
+5. **Essay routing appendix**: the essays the board recommends for a separate `full` run, with the one-line reason from the First Reader/DA flags.
+6. Certification banner rules unchanged; forbidden operations unchanged (you still cannot invent a finding no lane produced).
