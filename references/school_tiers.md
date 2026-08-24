@@ -2,6 +2,8 @@
 
 Used by `context_analyst_agent` to set the board's bar, and by all readers to anchor ratings. **Default tier when no school is named: T20-selective.** Reports must state which room they're grading for.
 
+⚠️ **This file is JUDGMENT, not source.** It encodes how high the bar sits — informed estimates, never quotable as any school's published position. For what a school actually *says* it wants, `references/university_guidance.md` governs and outranks the reading-culture notes below for any school it covers. Use both: this file for the height of the bar, that file for the shape of the target.
+
 Admit rates are approximate and shift year to year — treat as calibration anchors, not facts to assert to the user as current.
 
 | Tier | Examples | Approx. admit | What the essay must do | Verdict calibration |
@@ -15,6 +17,8 @@ Admit rates are approximate and shift year to year — treat as calibration anch
 | **Scholarship / competition** | Regeneron STS, Coca-Cola Scholars, Coolidge, Cameron Impact | n/a (juried) | Juries re-read against the program's stated criteria (STS: scientific rigor, the applicant's OWN thinking and role, potential as a scientist). Voice matters, but the writer's demonstrated intellectual contribution governs. **Certification regimes common — Context Analyst must check authorship/AI rules and arm the banner (STS: always).** | Rate against the program's criteria, not college-admissions taste. For STS essays: the inside of the scientific thinking is the content; polish is secondary. |
 
 ## Reading-culture notes (apply when the school is named)
+
+*Superseded by `university_guidance.md` wherever that file has an `OFFICIAL` entry — these are inferences; those are quotes. Several of the notes below have since been confirmed in the schools' own words, and where that is true, quote the school rather than paraphrasing here.*
 
 - **MIT**: short-answer format rewards directness and concrete specifics; scene-setting throat-clearing is a proportional-cost defect at 200–250 words. Warmth and "makers" culture — collaborative framing lands better than lone-genius framing.
 - **UC system**: no "essay" — four PIQs of 350 words. Scored on evidence against the 13 published criteria. First-person declarative beats narrative craft. Never grade a PIQ as a personal statement (SKILL.md anti-pattern #8).

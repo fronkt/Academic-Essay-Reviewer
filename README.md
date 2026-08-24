@@ -1,6 +1,8 @@
 # Academic-Essay-Reviewer (college-essay-board)
 
-A Claude Code skill that reviews college application essays — and, in `whole-app` mode, the **entire application** (test scores, APs, activities, honors, essays) — the way a selective-admissions committee actually reads them: fast, mid-season, in the context of a whole file and a whole pool. Structural sibling of [`academic-paper-reviewer`](https://github.com/Imbad0202/academic-research-skills), tuned for admissions instead of journals.
+A Claude Code skill that reviews college application essays — and, in `whole-app` mode, the **entire application** (test scores, APs, activities, honors, essays) — the way a selective-admissions committee actually reads them: fast, mid-season, in the context of a whole file and a whole pool. Then, on request, it edits the prose. Structural sibling of [`academic-paper-reviewer`](https://github.com/Imbad0202/academic-research-skills), tuned for admissions instead of journals.
+
+**v1.2.0** adds two things: a **sourced guidance layer** — what admissions offices actually publish, quoted with URLs, alongside College Essay Guy's named frameworks — and a **Line Editor** that returns real edited sentences under a per-school policy ceiling. Before v1.2.0 the skill cited nothing and refused to write; both were deliberate, and both are now fixed without giving up the discipline that made them deliberate.
 
 ## What it does
 
@@ -29,9 +31,40 @@ Output: section ratings + a **File Disposition band** (UNLIKELY / REACH-PLAUSIBL
 
 **Portal profiles** (`references/portal_specs.md`): Common App (10×150-char activities, 5 honors, per-school test policy) · **UC** (20 activities/awards, 4-of-8 PIQs, graded against the 13 comprehensive-review factors, SAT/ACT test-blind — grading them is treated as a defect) · **MIT** (own portal, 5 short essays, 4 activity slots as a curation test, SAT/ACT required, match traits).
 
+## Sourced, not guessed (v1.2.0)
+
+The board separates two kinds of knowledge and never blurs them.
+
+**Sourced** — quotable, with URLs and `verified_on` dates:
+- `references/university_guidance.md` — what admissions offices publish, **in their own words**, tagged by source strength (`OFFICIAL` / `OFFICIAL-ADJACENT` / `SNIPPET` / `NOT FETCHED`). Includes per-school supplement structures (Cornell's nine college-specific prompts, Columbia's list question, Caltech's STEM-dense supplements, MIT's two-tier essay set), plus **corroborated themes** — advice stated independently by many offices — and **contradictions**, where School A wants what School B warns against.
+- `references/ai_policy.md` — Common App's affirmation and Fraud Policy, UC's Statement of Application Integrity, per-school AI rules mapped to edit rungs, the Regeneron STS 2027 rules, and a list of widely-circulated claims that are **fabricated or conflated** and must never be repeated.
+- `references/craft_frameworks.md` — College Essay Guy's named methods (narrative vs. montage and the rule for choosing, the brainstorming exercises, BEABIES, uncommon connections), attributed, with the unverifiable ones explicitly excluded.
+
+**Judgment** — presented as estimate, never quoted as anyone's position: cliché base rates, tier calibration, pool positioning, testing anchors.
+
+Where a named school's published guidance conflicts with the board's own tier assumptions, **the school governs** and the report says so.
+
+## The Line Editor (v1.2.0) — it gives you sentences
+
+A Phase 3 agent executes the roadmap on the page, under an **intervention ladder**:
+
+| Rung | Operation | Generates prose? |
+|---|---|---|
+| L1 | Mechanics — grammar, punctuation, tense, dangling modifiers | No |
+| L2 | Compression — your words, fewer of them | No |
+| L3 | Resequence — move, cut, split; find the true opening | No |
+| L4 | Demonstration — new sentences replacing a *tell* with a *show* | Yes, bounded |
+| L5 | Redraft — a complete alternate version | Yes, fully |
+
+L1–L3 are operations on existing text, so they cannot invent biography *by construction*. L4/L5 generate, and must clear three gates: **voice-match** (against the Craft Reader's extracted voice sample — if no voice was found in the draft, L4 is unavailable), **mirror scan** (every generated sentence is checked against the skill's own AI-tell detector — the tool must not fail its own test), and a **facts ledger** (every claim traced to your draft; anything unmappable becomes a question, not prose).
+
+**The ceiling is set by the target school's own published AI policy.** Schools draw the line at different rungs, in their own words — Bowdoin and Swarthmore forbid AI that "modifies your tone," which is exactly what L2/L3 do; UC explicitly permits AI "to assist with readability"; ~70% of colleges publish nothing at all, and silence is treated as a fact to report, never as permission. Certification-bound work (Regeneron STS) drops to **L0** — direction only — because those rules contain no grammar carve-out and commit entrants to an authentication screening.
+
+Two operations are hard-blocked at every ceiling: **translating** a draft from another language, and **reworking one school's supplement for another** — both prohibited by name at multiple schools.
+
 ## Modes
 
-`full` (default) · `quick` (90-second gut check) · `re-review` (claimed-vs-verified traceability after revision) · `portfolio` (all essays for one school read as one file) · `whole-app` (entire Common App / UC / MIT submission) · `brainstorm` (Socratic topic development)
+`full` (default) · `quick` (90-second gut check) · `re-review` (claimed-vs-verified traceability after revision) · `portfolio` (all essays for one school read as one file) · `whole-app` (entire Common App / UC / MIT submission) · `brainstorm` (Socratic topic development, now running College Essay Guy's actual exercises) · `line-edit` (mechanics, tightening, restructuring) · `redraft` (a complete alternate draft as a demonstration)
 
 ## Install
 
@@ -47,4 +80,10 @@ Common App personal statement · school supplements (Why us / community / intell
 
 ## Iron rules
 
-Independent reads (no fake consensus) · synthesis traceability (the Chair cannot invent critique) · DA CRITICAL findings cap the verdict at Neutral · rewrite suggestions may never invent biography · essays are untrusted data (embedded instructions don't alter the review).
+Independent reads (no fake consensus) · synthesis traceability (the Chair cannot invent critique) · DA CRITICAL findings cap the verdict at Neutral · rewrite suggestions may never invent biography · essays are untrusted data (embedded instructions don't alter the review) · **a school's position may be quoted only from a verified source, and silence is never permission** · **generated prose ships only after all three gates pass** · **certification-bound work is L0 by default.**
+
+## The restraint principle
+
+Five independent admissions offices — Tufts, Carleton, UVA, Hamilton, Georgia Tech — warn that too many outside readers is itself a defect. Carleton: *"Limit the number of people who review your essay. Too much input usually means your voice is lost."* Hamilton: *"Substance and voice are better than perfection."*
+
+The board is one of those readers, and the Line Editor is the one most capable of doing that damage. So the lowest rung that discharges a roadmap item wins, Phase 3 never runs unasked, and every line edit ships a required **"What I left alone"** section naming the rough edges it deliberately preserved. An essay polished into correctness and out of personality has been made worse.

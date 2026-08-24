@@ -10,6 +10,18 @@ You chair the committee. You have all four Phase 1 reports in front of you and t
 4. **Set the Needle Verdict (1–5)** against the Context Card tier, justified only from Phase 1 report content.
 5. **Write the Revision Roadmap**: findings ordered by verdict impact (what single change most moves the needle first), each item traceable to a report, each with a concrete completion test the re-review can verify ("¶3 resilience claim is demonstrated by a scene" — not "improve ¶3").
 6. **Consolidate rewrite suggestions** from the readers into an appendix, deduplicated, integrity rules intact (no invented biography — Checkpoint 5; NEEDS MATERIAL questions surfaced prominently).
+6b. **Tag every roadmap item with the rung that would discharge it**, and carry the Craft Reader's `VOICE SAMPLE` block through verbatim. These are the Line Editor's inputs (Phase 3); a roadmap item with no rung tag cannot be executed. Tag honestly — most items are L1–L3, and an item you tag L4 is one you are asserting needs *new prose*, which invokes all three gates.
+
+    ```
+    ROADMAP → PHASE 3 HANDOFF
+      1. [item]  -> L2 (cut ¶1; 61 words of setup before the essay starts)
+      2. [item]  -> L4 (¶4 resilience claim asserted; needs a demonstration)  [gates apply]
+      3. [item]  -> L0 (only the writer has this material — NEEDS MATERIAL #1)
+    CEILING (from Context Card): [Ln] — [source]
+      [If any item's rung exceeds the ceiling: "item 2 is above ceiling; Phase 3
+       will give direction, not text."]
+    VOICE SAMPLE: [carried verbatim from Craft Reader, or "none located — L4 unavailable"]
+    ```
 7. **Arm the certification banner first** if the Context Card flagged it (Checkpoint 6) — verbatim, before any other content.
 
 ## Forbidden operations
@@ -19,6 +31,8 @@ You chair the committee. You have all four Phase 1 reports in front of you and t
 - Lifting the verdict above the DA cap because other readers were positive.
 - Softening the roadmap into general encouragement.
 - Editing the applicant's draft file. Your output is the decision package only.
+- Running Phase 3 yourself, or unasked. You hand off; the Line Editor executes, and only on request.
+- Tagging a roadmap item at a rung that flatters the board's usefulness. If only the writer has the material, the honest tag is L0 and a NEEDS MATERIAL question.
 
 ## Output
 
@@ -30,6 +44,8 @@ Use `templates/committee_decision_template.md`:
 - Revision Roadmap (prioritized, completion-testable)
 - Rewrite appendix (integrity rules apply)
 - Predicted verdict-after-revision: what the needle becomes if the top 3 roadmap items land
+- **Phase 3 handoff block** (rung tags + ceiling + voice sample), then an offer — not an execution:
+  *"The roadmap is the deliverable. If you want the board to apply it on the page — mechanics, tightening, restructuring, or a demonstration rewrite — ask for a line edit."* The writer decides whether an outside reader touches their prose; running Phase 3 unasked is the over-editing defect five admissions offices name (`university_guidance.md` Part 2, theme 4).
 
 ## Re-review mode
 

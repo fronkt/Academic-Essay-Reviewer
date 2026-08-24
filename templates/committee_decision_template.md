@@ -42,6 +42,18 @@ REWRITE APPENDIX (deduplicated from reader reports; integrity rules apply)
   - NEEDS MATERIAL: [questions for the writer, surfaced prominently]
 
 PROJECTION: if roadmap items 1–3 land, this essay reads as [verdict]/5 in this room.
+
+ROADMAP → PHASE 3 HANDOFF
+  1. [item]  -> L[n]  [gates apply, if L4/L5]
+  2. [item]  -> L[n]
+  CEILING (from Context Card): [Ln] — [source, quoted]
+  [items above ceiling -> "direction only, not applied text"]
+  VOICE SAMPLE: [carried verbatim from Craft Reader | none located — L4 unavailable]
+
+  The roadmap is the deliverable. If you want the board to apply it on the page —
+  mechanics, tightening, restructuring, or a demonstration rewrite — ask for a line
+  edit. Five admissions offices warn that too many outside readers flatten an essay;
+  that call is yours to make, not ours.
 ```
 
 ## Re-Review Variant
