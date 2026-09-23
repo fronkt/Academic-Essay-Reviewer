@@ -179,6 +179,13 @@ the result *(inferred)*.
   showcase essays work this way.
 - *Fails when:* the conceit outruns its accuracy and the person disappears behind it (cliché #11).
 - *Scale:* 650 ✓ · 250 ✓ · 50: the image only *(S)*. *Portal:* safe everywhere. *Evidence:* strong.
+- *Returning-object variant* (also called the "tiny-tool conceit"): a small real object planted early
+  returns later with a changed meaning, often once as a pattern and once at the close. Evidence: a 2025-26
+  Stanford REA admit's contribution essay built on a punctuation mark it used heavily and closed on
+  (Stanford creative research, pattern 8.1, E1; COMMUNITY-posted admit set). Passes when the object is
+  literally true (T6), each return turns (entry 4.8), and the gap it names matches the thesis. A board
+  flagged exactly that seam: an object standing for a missing *tool* next to a thesis about a forgotten
+  *person*.
 
 **4.2 Sideways-but-literal answer** · LOW
 - *What:* answer the prompt as asked, from an angle nobody else takes.
