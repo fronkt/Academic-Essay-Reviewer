@@ -6,6 +6,13 @@ A Claude Code skill that reviews college application essays — and, in `whole-a
 
 **v1.2.1** extends the AI-tell checklist (`references/ai_tells.md`) from Wikipedia's [*Signs of AI writing*](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) field guide: era-dated vocabulary, structural tells (negative parallelism, trailing *-ing* analysis, copula avoidance), a list of **ineffective indicators** the board must not flag on (perfect grammar, mixed registers), and the constructions human writing has *more* of, which the line editor now protects. The list is framed as a watchlist, not a delete list: a hit points at a missing fact, and swapping in a synonym fixes nothing.
 
+**v1.3.0** adds a **creative-forms layer** (`references/creative_forms.md`, `forms` mode). It answers "how could I take a risk with the *shape* of this essay?" with evidence instead of vibes:
+- **The base rate:** in 118 essays that four colleges published as "essays that worked", 13 depart from plain prose at all and 4 are wholly non-prose.
+- **What officers said:** Johns Hopkins praises form only when the content earns it. Yale's officers call the self-chosen letter "a little too gimmicky" but have admitted students who wrote one. UChicago invites play.
+- **Borrowed from creative nonfiction:** the tests for form vs. gimmick (hermit crab, braided, segmented, abecedarian), and what each portal does to line breaks, bold, and special characters.
+
+The menu always shows the conventional answer first, then patterns at three risk levels with skeletons, sourced examples, and an honest check of word cost and portal survival.
+
 ## What it does
 
 A Phase-0 context analyst classifies the essay (type, prompt, target school tier, certification regime, applicant-pool positioning), then four independent readers review in parallel, and a Committee Chair synthesizes:
@@ -66,7 +73,7 @@ Two operations are hard-blocked at every ceiling: **translating** a draft from a
 
 ## Modes
 
-`full` (default) · `quick` (90-second gut check) · `re-review` (claimed-vs-verified traceability after revision) · `portfolio` (all essays for one school read as one file) · `whole-app` (entire Common App / UC / MIT submission) · `brainstorm` (Socratic topic development, now running College Essay Guy's actual exercises) · `line-edit` (mechanics, tightening, restructuring) · `redraft` (a complete alternate draft as a demonstration)
+`full` (default) · `quick` (90-second gut check) · `re-review` (claimed-vs-verified traceability after revision) · `portfolio` (all essays for one school read as one file) · `whole-app` (entire Common App / UC / MIT submission) · `brainstorm` (Socratic topic development, now running College Essay Guy's actual exercises) · `forms` (a sourced menu of creative structures for a prompt, from safe to risky) · `line-edit` (mechanics, tightening, restructuring) · `redraft` (a complete alternate draft as a demonstration)
 
 ## Install
 

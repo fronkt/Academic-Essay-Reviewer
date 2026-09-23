@@ -55,4 +55,5 @@ Campus note: one application, independently reviewed per campus; selectivity var
 
 - Missing sections are reported **NOT PROVIDED** — never inferred, never filled in.
 - Portal limits shift annually: cite as "approx, [cycle] — verify in the live portal."
+- **Formatting survival** (line breaks, bold/italic, special characters, the Common App pipe ban, UC's plain-text rule, UT Austin's line-based limit) lives in `creative_forms.md` §6. Run its plain-text test before praising any form that depends on layout.
 - A file assembled for one portal reviewed against another (Common App activities list sent for a UC review) → readers grade against the TARGET portal's format and flag the conversion work as a roadmap item.

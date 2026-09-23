@@ -26,6 +26,7 @@ A cliché topic is not automatically fatal. The finding is CRITICAL only when th
 | 18 | Helping-others-made-me-want-to-help-others | Service activity → circular epiphany → helping career | The reflection is a tautology; motivation is asserted, unexamined | VERY HIGH | An honest account of what the writer GETS from service (discomfort, ego, curiosity) — mixed motives read as human |
 | 19 | The 45-year-old's memory | Any topic, narrated with adult-retrospective wisdom and installed insight | Reads as ghostwritten or consultant-shaped; the 17-year-old is absent | HIGH | Re-anchor in what the writer knew and felt AT THE TIME, mistakes intact |
 | 20 | Science-fair montage (research kids) | Project → obstacle → poster → award → "research taught me perseverance" | In STS/ISEF-adjacent pools, this is the résumé-in-prose of research; the committee already has the project in the activities list | VERY HIGH (research pools) | The one moment of real intellectual doubt or a wrong turn defended too long — the inside of the thinking, not the arc of the project |
+| 21 | Form as costume | A chosen non-prose form (self-addressed letter, recipe, script, quiz, glossary, "that little girl was me" third-person twist) wrapped around material that would read the same as plain paragraphs | The scaffolding eats the budget and the reader notices the gimmick first. Yale's officers: *"a huge amount of content in that essay has been devoted to propping up the gimmick"* (`creative_forms.md` §8) | MODERATE | Passes `creative_forms.md` §2: fits this writer (T1), the form echoes the subject (T3), is recognizable at once (T4), and costs little (T7). A form the prompt *requires* is never this arc |
 
 ## Reader instructions
 
@@ -33,3 +34,4 @@ A cliché topic is not automatically fatal. The finding is CRITICAL only when th
 - Quote the sentence where the essay commits to the arc.
 - State explicitly whether this instance clears its salvage conditions, and what clearing them would take.
 - Two arcs stacked (e.g., #12 + #20) is itself a MAJOR finding: the essay is assembled from templates.
+- An unusual form is not itself a finding. #21 fires only when the §2 tests in `creative_forms.md` fail. A form that passes them is a craft strength; say so.

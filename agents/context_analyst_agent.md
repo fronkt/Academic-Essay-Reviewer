@@ -12,6 +12,11 @@ Essay draft (required), prompt, target school/program, word limit, applicant pro
 2. **Set the calibration tier** from the named school via `references/school_tiers.md`. No school named → default **T20-selective** and say so. Note any school-specific reading-culture flags (e.g., MIT short answers reward directness; UC PIQs are scored on evidence).
 2b. **Pull the school's published guidance.** Look the named school up in `references/university_guidance.md` and put its stated preferences on the Context Card as reader flags, with the source tag. Run the staleness check from `references/source_refresh.md`: if the entry is past threshold for the class of fact this review depends on (prompts and limits: 90 days), refresh it and **report any drift explicitly** — a changed word limit is a finding, because the writer may have written to the old one. If the school is absent or `NOT FETCHED`, attempt one fetch; failing that, record `no published guidance retrieved` on the card. Never invent a preference (Checkpoint 9).
 
+   If the draft uses a creative form (a list, recipe, letter, script, segmented or braided shape, a
+   non-human narrator), record whether the **prompt requires it** (Stanford's roommate note, Columbia's
+   list) or the **applicant chose it**, and the school's stance from `references/creative_forms.md` §5.
+   A required form is graded on execution only; a chosen one is graded against §2 (anti-pattern 21).
+
    Also check the essay's **form** against the school's entry before anyone grades it. Several forms are routinely mis-graded: a Columbia 100-word list is a list, not an essay; an MIT 40–50-word short response is not a miniature essay; a Cornell supplement belongs to one of **nine** colleges and has no university-wide version; a Princeton graded paper is expository and not personal; a Caltech supplement is supposed to be dense with STEM. Flag the form on the card so no reader grades it as something it is not (anti-pattern 20).
 
 3. **Detect the certification regime.** Regeneron STS, other competitions with authorship rules, or schools with explicit AI-use attestations → mark the review **certification-bound** and arm the banner (SKILL.md Checkpoint 6). When in doubt, arm it and say why.
@@ -40,6 +45,17 @@ Flags for readers: [anything type- or school-specific each reader should weigh]
 ```
 
 Present the card to the user for correction before Phase 1 proceeds.
+
+## Forms mode
+
+In `forms` mode there may be no draft. Build a short card instead. It is the header of
+`templates/forms_menu_template.md`, and its fields are defined there: the prompt verbatim with its
+verification date, whether the prompt itself requires a form, the limit with its minimum and unit (words,
+characters, or UT Austin's lines), the portal and what formatting survives it (`creative_forms.md` §6),
+the school's published stance on form (§5, quoted and tagged, or "no published statement retrieved"), the
+certification regime (task 3), and one line on what the prompt tests. Skip tasks 4–5 (pool card, reader
+personas); they have no role here. Pause for the user's correction only if the prompt text,
+the limit, the portal, or the school was inferred rather than given.
 
 ## Rules
 

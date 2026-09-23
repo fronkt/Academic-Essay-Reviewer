@@ -101,3 +101,23 @@ inconsistently (MIT: "the 2026–2027 application"; Caltech: "Fall 2027 applican
 different and only visible from the primary source: MIT's essay structure was wrong in the file
 (it is 4 main essays + 4 short responses, not five short answers). **Checking the source found a
 different bug than the one I predicted** — which is the argument for checking rather than reasoning.
+
+---
+
+## 2026-09-23 — A new reference file re-imports old mistakes unless it is checked against the old rules
+
+**What happened.** `creative_forms.md` was built from fresh research. The research agent tagged a UVA
+dean's personal Blogger post and a Tulane director's Blogger post as OFFICIAL. `university_guidance.md`
+already names the UVA blog as trap #1 under its attribution rule. The new file repeated the exact defect
+the old file exists to prevent. Neither the build nor the refute pass caught it. A trial run of the new
+mode did, because the run had to read both files at once and saw them disagree.
+
+**Rule for next time.** When a new sourced reference is added, run its tags against the existing
+attribution rule *before* the refute pass. The refute pass checks each claim against its source; it does
+not check the new file against the skill's own settled rulings. A cross-file consistency check is a
+separate step, and a trial run that reads every file the mode touches is the cheapest way to do it.
+
+**Also:** the first version of the catalog had no poem entry, although poems are the most-reported
+creative form on Reddit and Yale's officers discuss them at length. The research strands were organized by
+source type, not by form, so no strand owned the gap. Checking coverage by *form* (does every form the
+evidence mentions have an entry?) would have found it on day one.

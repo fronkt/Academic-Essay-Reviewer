@@ -59,3 +59,63 @@ Frank's framing: a reminder of what to look out for, not "if it is there, delete
 - [x] `authenticity_reader_agent.md`: screen §F before logging
 - [x] Verification: all 9 quoted WP phrases found verbatim in the downloaded source; the self-scan of new prose hits only the intentional examples; em dashes in the file went down (6 → 4)
 - [ ] Not run: a full-board pass on a real draft with the new §F/§G (next essay review exercises it)
+
+## v1.3.0 — Creative forms & risk-taking (started 2026-09-23)
+
+Frank asked whether the skill helps with *form-level* risk (structuring a whole essay or short answer as
+something creative, beyond prose and content). Audit: it did not. It has narrative/montage and Uncommon
+Connections (craft_frameworks.md), but form-risk shows up only as cliché entries to flag (#11 extended
+metaphor, #15 quirky object). There was no catalog of forms, no evidence on when they work, no per-school
+risk appetite, and no portal-formatting check.
+
+Spec for the output shape comes from Frank's standing preference (memory: essay creative options):
+a GENERAL menu grounded in other applicants' real writing, not tailored ideas. Risk levels LOW (fresh
+framing) / MEDIUM (structural device) / HIGH (format break or sideways reading), each with a skeleton,
+sourced real examples, an honest evaluation (word arithmetic at the exact limit, portal survival,
+sideways-answer risk, evidence strength), and failed patterns kept with their verdict. Always shown next
+to the conventional target, never as a replacement.
+
+### Research (4 parallel agents → scratchpad/creative/)
+- [x] A — university-published essays that worked with unconventional form + AO commentary + base rates; official welcome/warning statements
+- [x] B — College Essay Guy beyond what we have + named practitioners; creative-nonfiction forms (hermit crab, braided, segmented, abecedarian, footnoted, second person) with named sources
+- [x] C — Reddit via Arctic Shift (A2C, collegeresults): outcomes, cautionary tales, former-AO comments, supplement moves
+- [x] D — portal formatting (Common App / UC / MIT / others): what survives (line breaks, bold/italic, special chars)
+
+### Build
+- [x] `references/creative_forms.md` — principles, risk ladder, form catalog, school risk appetite, portal survival, community evidence, failed patterns, searched-not-found
+- [x] New mode `forms` + `templates/forms_menu_template.md`
+- [x] craft_reader: form diagnosis (borrowed/segmented forms graded on form-content fit, not penalized)
+- [x] cliche_taxonomy: form-as-costume entry
+- [x] institutional_reader: school risk appetite; a sideways answer must still answer the prompt
+- [x] portal_specs: formatting-survival rows
+- [x] line_editor / redraft: "show me this as a [form]" routes to L5 with the facts ledger and a portal-survival check
+- [x] SKILL.md mode table + selection logic + reference table, README, version 1.3.0
+
+### Verify
+- [x] Adversarial refute-pass over creative_forms.md claims (attribution and provenance first)
+- [x] Dry run of `forms` mode on a generic prompt; check output against the spec above
+- [x] Commit + push
+
+### Results
+- Research: A 118 showcase essays tallied (13 depart from prose, 4 wholly non-prose); B 13 practitioner +
+  14 craft-form records, 12 attributed gimmick tests; C 12,784 r/collegeresults posts scanned + ~90 threads
+  (39 positive / 9 negative self-reported, heavy selection bias); D portal behavior (only Common App
+  bold/italic/underline officially documented for applicants; pipe banned; UC plain ASCII).
+- Found by direct check, not by any strand: Yale podcast Ep. 17 (2021) on poems ("Downvote"; "rarely seen
+  it work well in a longer essay"). The Reddit relay of it was accurate. The catalog had no poem entry
+  until then, and 4.21 was added.
+- Refute pass: 105 claims; 0 misattributed / not found; 1 wrong date (Tulane post is 2021, not 2018);
+  Talbot's context corrected (her failure mode is accomplishment-listing, not segment titles); §1.3's
+  heading narrowed after UNE was found inviting format play; every READ-WF quote confirmed verbatim.
+- Dry run 1 (Stanford list + Common App prompt 7): 30 friction items. Biggest: no rule for the ladder when the
+  prompt mandates the form. Fixed: a mandated-form ladder (§3), personal-statement strictest-stance rule,
+  PRESS-QUOTED tag, UVA/Tulane re-tagged per the attribution rule, a §11 source index, a template rewrite
+  (header fields, merged-pass rule, access grades, (S) marker), and forms-mode notes in three agents.
+  The 50/50 reference was dropped from the template: no URL exists even in the vault research.
+- Dry run 2 (Stanford list + UC PIQ 1): the fixes held (the list is treated as the assignment; UC gets plain
+  "I" prose, and non-"I" forms are withheld on UC's own line). 32 smaller items. Fixed: phrase-as-item moved
+  to LOW, HIGH gating unified (withhold only on portal or school grounds), certification defined as L0
+  regimes only, community permalink table in §7, interpolation rule for in-between limits, *(inferred)*
+  marker, cliché arc named in the conventional target, REST OF THE SET header line, inline-list rule for
+  plain-text boxes, and forms-mode exceptions written into Checkpoints 1 and 2. Left as polish: evidence
+  grades by scale, file-level verified_on dates.

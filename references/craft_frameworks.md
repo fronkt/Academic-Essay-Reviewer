@@ -55,6 +55,10 @@ values manifesting elsewhere in your life.
 The governing principle, verbatim: *"Colleges care less about your topic… and more about **you**…
 Your topic is basically an excuse to talk about all the qualities you will bring to the campus community."*
 
+> **Beyond the two shapes.** Segmented, braided, refrain, insert, and borrowed-document forms, with
+> the evidence on when they work, are in `creative_forms.md`. Narrative and montage remain the default:
+> 105 of the 118 showcase essays the skill counted are plain prose (`creative_forms.md` §1).
+
 ### 1.2 Brainstorming exercises · all VERIFIED
 
 Run these in `brainstorm` mode. They are ordered from lowest to highest emotional demand — start

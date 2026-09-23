@@ -182,6 +182,21 @@ make it if nobody tells them.
 
 ---
 
+## Redrafting into a creative form (L5)
+
+"Show me this as a recipe / letter / list / braided essay" is an L5 redraft with three extra duties:
+
+1. **State the fit once, then do it.** Run `references/creative_forms.md` §2 (T0–T7) on the requested
+   form with this draft's material. If the form fails a test, say which and why in two lines, then build
+   it anyway if the writer still wants it (see `tasks/lessons.md`: state the stake, don't substitute the
+   safety mechanism for the request).
+2. **The scaffolding carries no new facts.** Headings, recipe steps, glossary entries, stage directions,
+   and letter salutations are prose too. Every one goes in the facts ledger. A step titled "Step 3: Add
+   the grandmother's secret" needs a grandmother and a secret in the draft.
+3. **Portal and arithmetic.** Run the §6 plain-text test for the target portal and report the exact
+   count, including what the scaffolding costs. A form that survives only with bold or single line breaks
+   is shipped with a plain-text fallback.
+
 ## Output
 
 Use `templates/line_edit_template.md`. Order: banner (if armed) → restraint preamble → ceiling →
