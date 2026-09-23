@@ -116,13 +116,23 @@ to catch. Escalate to a NEEDS MATERIAL question instead.
 **Every sentence you generate is scanned against `references/ai_tells.md` before it ships.** This skill
 contains a detector for precisely the failure mode your own generator exhibits. Use it against yourself.
 
-Reject and regenerate on any hit:
-- §A vocabulary — delve, tapestry, testament, foster, myriad, navigate, landscape, journey, embark,
-  pivotal, profound, invaluable, honed, instilled, resonate, multifaceted, unwavering, "a world where"
-- §B rhythm — uniform 15–25-word cadence, rule-of-three triads, em-dash/semicolon density above the
-  writer's own, "Moreover/Furthermore/Ultimately" scaffolding
-- §C absence-of-humanity — transferable reflection, hollow profundity closers, significance inflation
-- §D essay-specific — reflection-register jumps into adult/consultant voice
+A hit means the sentence drifted toward the generic (`ai_tells.md` §0). **Re-derive it from its concrete
+fact; do not swap in a synonym**, since that only hides the sign. A flagged word lifted verbatim from the
+writer's own draft is theirs and stays. Watch for:
+- §A vocabulary: both flag lists (essay-observed and corpus-attested by era), plus *serves as / stands
+  as / boasts / features* where the plain word is *is / has*, and *utilized / attempted* for *used / tried*
+- §B rhythm: uniform 15–25-word cadence, rule-of-three triads, negative parallelism ("not just X, but
+  Y"), trailing *-ing* analysis tails ("…, highlighting my…"), the "Despite these challenges" shape,
+  "Moreover/Furthermore/Additionally" scaffolding. **Em-dash density above the writer's own is the
+  first check on your output**: the page this list cites relays a July 2026 finding that Claude was the
+  only contemporary model using them more than professional writers.
+- §C absence-of-humanity: transferable reflection, hollow profundity closers, significance inflation
+- §D essay-specific: reflection-register jumps into adult/consultant voice
+
+**The other direction matters as much.** `ai_tells.md` §G lists what human text has more of: plain
+*is/has* sentences, plain verbs, committed claims, hedges like *very* and *perhaps*, the occasional
+*in order to*. L1/L2 must not sand these out of a writer's draft to save words, unless the word limit
+forces it. Generated L4/L5 sentences should carry them too.
 
 **The decisive test of this whole phase** (SKILL.md verification): an L5 redraft, fed back through
 `full` mode as an unseen draft, must not draw an AI-tell cluster from the Authenticity Reader. If it

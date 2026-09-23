@@ -48,3 +48,14 @@ Plan of record: `~/.claude/plans/joyful-soaring-magpie.md` (approved 2026-08-23)
 - **Per-school supplement prompts beyond the deep-dive set.** Cornell (9 units), Columbia, CMU, Caltech, Princeton, Stanford, MIT are captured. Everything else is tier-calibrated only. Adding a school is now cheap — one entry, four fields.
 - **Brown, Williams, Pomona, Colby, Michigan, Wisconsin, UT Austin essay advice** — pages did not render or do not exist. Left as `NOT FETCHED` rather than filled from priors.
 - **Cornell's essay-advice blog** — confirmed dead; its paraphrases circulate but have no checkable source.
+
+## v1.2.1 — AI-tell checklist from Wikipedia's *Signs of AI writing* (2026-09-23)
+
+Frank's framing: a reminder of what to look out for, not "if it is there, delete it immediately."
+
+- [x] Read WP:Signs of AI writing (rev 1376018375, 2026-09-21) in full as raw wikitext
+- [x] `ai_tells.md`: §0 watchlist framing (signs are symptoms; the defect is regression to the mean; fix = restore the fact, not a synonym), era-dated vocabulary, copula avoidance, negative parallelism, trailing *-ing* analysis, "Despite" formula, em-dash note (writer's own = voice; the generator is the overuser), §E why-us/activity text, §F ineffective indicators, §G signs of human writing
+- [x] `line_editor_agent.md` Gate 2: re-derive from the fact instead of swapping synonyms; protect §G markers in L1/L2
+- [x] `authenticity_reader_agent.md`: screen §F before logging
+- [x] Verification: all 9 quoted WP phrases found verbatim in the downloaded source; the self-scan of new prose hits only the intentional examples; em dashes in the file went down (6 → 4)
+- [ ] Not run: a full-board pass on a real draft with the new §F/§G (next essay review exercises it)

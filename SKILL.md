@@ -2,15 +2,15 @@
 name: college-essay-board
 description: "Multi-perspective college application review simulating a realistic admissions committee, plus a sourced line editor that returns actual edited prose. 4 independent essay readers (First Reader + Craft Reader + Authenticity Reader/Devil's Advocate + Institutional Reader) + 2 whole-app readers (Academic Context + Activities & Awards) + Committee Chair + Line Editor, calibrated to the target school's selectivity and graded against what schools actually publish. Supports full board review, 90-second first read, re-review (revision verification), portfolio review (all essays for one school), whole-application review (entire Common App / UC / MIT submission incl. test scores, APs, ECs, awards), Socratic topic brainstorm, line editing (grammar/compression/restructuring), and full redraft. Triggers on: review my essay, college essay review, admissions board, admissions committee, personal statement review, supplement review, why us essay, UC PIQ review, scholarship essay review, would an admissions officer, essay verdict, review my whole application, review my Common App, review my UC app, review my MIT app, activities list review, chance me, fix my grammar, edit my essay, tighten my essay, cut my essay to the word limit, rewrite this paragraph, redraft my essay."
 metadata:
-  version: "1.2.0"
-  last_updated: "2026-08-23"
+  version: "1.2.1"
+  last_updated: "2026-09-23"
   status: active
   related_skills:
     - academic-paper-reviewer
     - avoid-ai-writing
 ---
 
-# College Essay Board v1.2.0 — Admissions Committee Essay & Application Review
+# College Essay Board v1.2.1 — Admissions Committee Essay & Application Review
 
 Simulates a realistic selective-admissions reading room: a Phase-0 context analyst classifies the essay (type, prompt, target school, certification regime, applicant pool), configures four independent readers, and a Committee Chair synthesizes their reports into committee minutes, a needle verdict, and a prioritized revision roadmap. A **Phase-3 Line Editor** then executes that roadmap on the page, returning real edited prose under a policy-gated intervention ladder. A `whole-app` mode reviews the **entire submission** — academics, testing, activities, honors, essays — against portal-specific frameworks (Common App / UC / MIT).
 
@@ -286,7 +286,7 @@ The file is graded against the TARGET portal's own framework (`references/portal
 |----------|----------------|
 | **Reading fatigue** | Readers are primed mid-season: this is file #43 today, read after lunch at 90-second pace. "Memorable" is judged against that bar, not a careful close-read. First Reader reports where attention actually drifted. |
 | **Cliché base rates** | DA cites `references/cliche_taxonomy.md` by name with per-cycle frequency framing ("a reader at this tier sees ~300 of these arcs per season") and the salvage conditions under which the topic can still work. |
-| **AI-tell scan** | DA runs `references/ai_tells.md` (built on the `avoid-ai-writing` skill's pattern categories, essay-tuned). Flags cite specific lines. For a deep line-by-line audit, hand the draft to `avoid-ai-writing` separately. |
+| **AI-tell scan** | DA runs `references/ai_tells.md` (built on the `avoid-ai-writing` skill's pattern categories plus Wikipedia's *Signs of AI writing* field guide, essay-tuned). It is a watchlist, not a delete list: flags cite specific lines, ineffective indicators (§F) are screened out first, and fixes name the missing fact, never a synonym. For a deep line-by-line audit, hand the draft to `avoid-ai-writing` separately. |
 | **Pool positioning** | Context Analyst builds a Pool Context Card: given the applicant's profile and the school's pool, how common is this topic/angle combination, and what would differentiation require. Honest about being an estimate, not admissions data. |
 | **School calibration** | Verdict thresholds set by tier per `references/school_tiers.md`. The same essay can be Mild Positive at a flagship and Neutral at a T10 — reports say which room they're grading for. |
 | **Published-guidance grading** | When a school is named, the Institutional Reader grades prompt-fit and tone against **what that school actually publishes**, quoted, from `references/university_guidance.md` — not against inferred culture. Yale's *"we've read wonderful essays on common topics"* and MIT's *"if you enjoy working alone all the time… you might not be particularly happy at MIT"* are gradeable standards; "what a T10 probably wants" is not. Nothing retrieved → say so and fall back to tier culture (Checkpoint 9). |
@@ -358,7 +358,7 @@ Templates: `templates/reader_report_template.md`, `templates/committee_decision_
 | `references/essay_type_rubrics.md` | Per-type expectations, dimension weights, common failure modes, certification flags | all agents |
 | `references/school_tiers.md` | Tier calibration table + per-tier verdict thresholds and reading-culture notes | context_analyst, all readers |
 | `references/cliche_taxonomy.md` | Named cliché arcs, why each fails, base-rate framing, salvage conditions | authenticity_reader |
-| `references/ai_tells.md` | Essay-tuned AI-writing tells, escalation ladder, relationship to `avoid-ai-writing` | authenticity_reader |
+| `references/ai_tells.md` | Essay-tuned AI-writing tells (watchlist framing, era-dated vocabulary, structural tells, ineffective indicators, signs of human writing), escalation ladder, relationship to `avoid-ai-writing` | authenticity_reader, line_editor |
 | `references/portal_specs.md` | Common App / UC / MIT portal profiles: sections, limits, test policies, review frameworks (UC 13 factors, MIT match traits), portal detection | context_analyst, all whole-app lanes |
 | `references/testing_calibration.md` | SAT/ACT mid-50 anchors by tier, submit/withhold logic, AP/IB report etiquette, superscore notes, honesty rules | academic_context_reader |
 | `references/activities_rubric.md` | EC tier framework (T1–T4 w/ base rates + context re-tiering), slot craft per portal, honors rubric, file-shape read, red-flag patterns | activities_awards_reader, authenticity_reader (file mode) |

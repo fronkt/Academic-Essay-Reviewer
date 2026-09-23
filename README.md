@@ -4,6 +4,8 @@ A Claude Code skill that reviews college application essays — and, in `whole-a
 
 **v1.2.0** adds two things: a **sourced guidance layer** — what admissions offices actually publish, quoted with URLs, alongside College Essay Guy's named frameworks — and a **Line Editor** that returns real edited sentences under a per-school policy ceiling. Before v1.2.0 the skill cited nothing and refused to write; both were deliberate, and both are now fixed without giving up the discipline that made them deliberate.
 
+**v1.2.1** extends the AI-tell checklist (`references/ai_tells.md`) from Wikipedia's [*Signs of AI writing*](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) field guide: era-dated vocabulary, structural tells (negative parallelism, trailing *-ing* analysis, copula avoidance), a list of **ineffective indicators** the board must not flag on (perfect grammar, mixed registers), and the constructions human writing has *more* of, which the line editor now protects. The list is framed as a watchlist, not a delete list: a hit points at a missing fact, and swapping in a synonym fixes nothing.
+
 ## What it does
 
 A Phase-0 context analyst classifies the essay (type, prompt, target school tier, certification regime, applicant-pool positioning), then four independent readers review in parallel, and a Committee Chair synthesizes:
